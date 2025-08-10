@@ -1,18 +1,19 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class TaskManager {
-    public int taskId;
-    public HashMap<Integer,Task> taskMap;
-    public HashMap<Integer,Epic> epicMap;
-    public HashMap<Integer,SubTask> subTaskMap;
+    public int taskId = 0;
+    public Map<Integer,Task> taskMap = new HashMap<>();
+    public Map<Integer,Epic> epicMap = new HashMap<>();
+    public Map<Integer,SubTask> subTaskMap = new HashMap<>();
 
-    public TaskManager() {
-        taskMap = new HashMap<>();
-        epicMap = new HashMap<>();
-        subTaskMap = new HashMap<>();
-        taskId = 0;
-    }
+//    public TaskManager() {
+//        taskMap = new HashMap<>();
+//        epicMap = new HashMap<>();
+//        subTaskMap = new HashMap<>();
+//        taskId = 0;
+//    }
 
     public void addTask(Task newTask) {
         newTask.taskId = increaseTaskId();
