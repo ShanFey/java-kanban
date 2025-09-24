@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.List;
 
 public interface TaskManager {
     void addTask(Task newTask);
@@ -7,21 +7,21 @@ public interface TaskManager {
 
     void addSubTask(SubTask newSubTask);
 
-    Task getTask(int taskID);
+    Task getTask(int taskId);
 
     Epic getEpic(int epicID);
 
-    SubTask getSubTask(int subTaskID);
+    SubTask getSubTask(int subTaskId);
 
-    Integer getID(Task currentTask);
+    Integer getId(Task currentTask);
 
-    ArrayList getTasksList();
+    List getTasksList();
 
-    ArrayList getEpicsList();
+    List getEpicsList();
 
-    ArrayList getSubTaskList();
+    List getSubTaskList();
 
-    ArrayList getEpicSubTasksList(Epic currentEpic);
+    List getEpicSubTasksList(Epic currentEpic);
 
     void updateTask(Task newVersionTask);
 

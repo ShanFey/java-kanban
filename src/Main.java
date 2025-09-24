@@ -41,8 +41,8 @@ public class Main {
         System.out.println(taskManager.getSubTaskList());
 
         System.out.println("Задача по ИД:");
-        int taskID = scanner.nextInt();
-        Task currentTask = taskManager.getTask(taskID);
+        int taskId = scanner.nextInt();
+        Task currentTask = taskManager.getTask(taskId);
         System.out.println(currentTask);
 
         currentTask.taskDiscription += "!";
